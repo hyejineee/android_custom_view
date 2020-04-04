@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.hyejineee.customview.ChangeColorTextView
+        android:id="@+id/dust_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나쁨"
+        my:dimension = "100">
+
+    </com.hyejineee.customview.ChangeColorTextView>
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="미세먼지 수치 증가"/>
+
+    <com.hyejineee.customview.DonutChartView
+        android:id="@+id/donut"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+    </com.hyejineee.customview.DonutChartView>
+
+    <Button
+        android:id="@+id/add_c_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add Category"
+        />
+
+</LinearLayout>
